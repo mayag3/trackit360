@@ -14,7 +14,8 @@
 ### ✅ Part 1: Physical Stock Count (Barcode-Based Entry)
 
 - A **barcode scanner** is used to input product data: `Part Number`, `Quantity`, and `Location`.
- ![image](https://github.com/user-attachments/assets/fd73a4ea-f652-48a9-aa0a-27a4462b865a)
+ ![image](https://github.com/user-attachments/assets/d811e5e9-69dc-4472-b09a-fd659786f40d)
+
 
 - User enters these values via a UI (Sheet 1). Upon submission:
   - Values are copied to cells `F7`, `F8`, and `F9`.
@@ -72,7 +73,9 @@ This ensures rapid and clean input of physical stock data via scanning.
 ### 🔍 Part 2: System Data Comparison
 
 - A separate **System Data Sheet** contains default information for all parts: `Part Number`, `Default Quantity`, and `Default Location`.
+   ![image](https://github.com/user-attachments/assets/929d5683-4cb7-4122-b6ad-5d841ecbede9)
 - After accumulating physical scan data:
+  
   1. **Sum quantities** for each distinct `Part Number`.
   2. Compare with system quantities and locations.
   3. If there are **multiple or mismatched locations**, they are **flagged**.
